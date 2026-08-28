@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
-    <head>
-        <title>Tristan Delgado</title>
-        <link rel="icon" type="image/png" href="images/favicon.png">
-        
-        <link rel="stylesheet" type="text/css" href="css/main.css">
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="initialScreen">
+<head>
+    <title>Tristan Delgado</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Tristan Delgado</a>
+        <nav class="site-nav">
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="html/education.html">Education</a></li>
+                <li><a href="html/projects.html">Projects</a></li>
+                <li><a href="html/experience.html">Experience</a></li>
+                <li><a href="html/personal.html">Personal</a></li>
+                <li><a href="html/skills.html">Skills</a></li>
+                <li><a href="html/references.html">References</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
             <h5>Tristan</h5>
-            <h1>Delgado</h1> 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint 
-                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim 
-                id est laborum.
+            <h1>Delgado</h1>
+            <p>
+                [Write a short introduction here — who you are as a developer, what you
+                work on, and what you're looking for. A couple of sentences is plenty.]
             </p>
-        </div>
-    </body>
-<html>
+
+            <ul class="contact-list">
+                <li>Email: <a href="mailto:you@example.com">[your email]</a></li>
+                <li>GitHub: <a href="https://github.com/">[your GitHub URL]</a></li>
+                <li>LinkedIn: <a href="https://linkedin.com/">[your LinkedIn URL]</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; <span id="year"></span> Tristan Delgado</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Create a guest book so visitors could "sign" the site.
