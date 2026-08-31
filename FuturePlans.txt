@@ -1,13 +1,3 @@
 Create a guest book so visitors could "sign" the site.
-Add a resume download button
 
-Change Eduction to Education and Certifactes
-
-Add GPA to education area
-Add all classes to Education area
-
-Edit personal life area
-
-Add references
-Angela McMinemon
-Steven Henshaw
+Make certain areas mobile friendly.

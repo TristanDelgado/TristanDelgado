@@ -80,14 +80,17 @@ a {
 
 /* Header / nav */
 .site-header {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 1rem;
+}
+
+.header-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 1rem;
-    max-width: var(--container-width);
-    margin: 0 auto;
-    padding: 1.5rem 1.25rem 1rem;
+    gap: 0.75rem 1rem;
 }
 
 .logo {
@@ -96,6 +99,42 @@ a {
     color: var(--text);
     text-decoration: none;
     letter-spacing: 0.02em;
+}
+
+.site-nav {
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    color: var(--bg);
+    background-color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+    padding: 0.45rem 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+    background-color: transparent;
+    color: var(--accent);
+}
+
+.btn-outline {
+    color: var(--accent-2);
+    background-color: transparent;
+    border-color: var(--accent-2);
+}
+
+.btn-outline:hover,
+.btn-outline:focus-visible {
+    background-color: var(--accent-2);
+    color: var(--bg);
 }
 
 .site-nav ul {
@@ -208,6 +247,11 @@ main {
     font-size: 0.95rem;
 }
 
+.contact-list li {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
 .contact-list a {
     text-decoration: none;
     border-bottom: 1px solid transparent;
@@ -254,13 +298,18 @@ main {
     font-family: var(--font-sans);
     font-weight: 600;
     font-size: 1.15rem;
+    min-width: 0;
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .entry-meta {
     font-family: var(--font-mono);
     font-size: 0.8rem;
     color: var(--text-muted);
-    white-space: nowrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    min-width: 0;
 }
 
 .entry p,
@@ -273,6 +322,17 @@ main {
 
 .entry ul {
     padding-left: 1.2rem;
+}
+
+/* Section titles (e.g. Certifications under Education) */
+.section-title {
+    font-family: var(--font-display);
+    font-size: clamp(1.5rem, 4vw, 2.25rem);
+    margin: 2.5rem 0 1rem;
+}
+
+.cert-actions {
+    margin-top: 1rem;
 }
 
 /* Skills page */
@@ -305,6 +365,33 @@ main {
     border-radius: 4px;
     padding: 0.3rem 0.7rem;
     font-size: 0.9rem;
+}
+
+/* Small screens */
+@media (max-width: 480px) {
+    .site-nav ul {
+        gap: 0.65rem 1rem;
+        font-size: 0.8rem;
+    }
+
+    .hero-photo {
+        width: 96px;
+        height: 96px;
+    }
+
+    .entry {
+        padding: 1rem 1.1rem;
+    }
+
+    .entry-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .btn {
+        white-space: normal;
+    }
 }
 
 /* Footer */
