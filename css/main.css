@@ -267,6 +267,8 @@ main {
 .entry ul {
     margin: 0.5rem 0 0;
     color: var(--text);
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .entry ul {
